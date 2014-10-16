@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Contacto</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Custom styles for this template -->
+        <link href="styles/carousel.css" rel="stylesheet" />      
+        <link href="styles/contacto.css" rel="stylesheet" />
+        <link href="styles/font-awesome.css" rel="stylesheet">
+        <link href="styles/font-awesome.min.css" rel="stylesheet">
+        <script type="text/javascript" src="scripts/validaFormulario.js"></script>
+
+    </head>
+    <!-- NAVBAR
+    ================================================== -->
+    <body>
+        <form name="frmContacto" method="post" action="php/sendbymail.php" onsubmit="return validar(this);"> 
+            <div class="navbar-wrapper">
+                <div class="container">
+
+                    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand sigen" href="/">
+                                    <img src="images/Logos/logo-menu.png">
+                                </a>
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="quienes.html">Quienes Somos</a></li>
+                                    <li><a href="contacto.html">Contacto</a></li>
+                                    <li><a href="index.html">Galeria</a></li>   
+                                    <li><a href="http://www.sigen.cl:2095/webmaillogout.cgi">Correo corporativo</a></li>   
+                                    <li class="dropdown">
+                                        <a href="servicios" class="dropdown-toggle" data-toggle="dropdown">Servicios<span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Ingeniería Eléctrica</a></li>
+                                            <li><a href="#">Ingeniería y Gestión Técnica de los Combustibles</a></li>
+                                            <li><a href="#">Gestión Técnica de Instalaciones Industriales y Comerciales</a></li>
+                                            <li class="divider"></li>
+                                            <li class="dropdown-header">Servicios en terreno</li>
+                                            <li><a href="#">Inspección Técnica de Obras</a></li>                                        
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>      
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Carousel
+            ================================================== -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/Carrusel/foto-slides-1.jpg" alt="First slide">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1><strong>SIGEN</strong></h1>
+                                <p><strong>SIGEN, Sociedad de Ingeniería, Gestión & Electricidad para los Negocios</strong></p>
+                                <p><a class="btn btn-lg btn-primary" href="quienes.html" role="button">Mas sobre nosotros</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src= "images/Carrusel/tranvianocturno.jpg" alt="Second slide">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1><strong>CONTACTO</strong></h1>
+                                <p><strong>Si Deseas Nuestra Asesoria o Contratar Nuestros Servicios Ingresa tus Datos en el Formulario de Contacto.</strong></p>
+                                <p><a class="btn btn-lg btn-primary" href="contacto.html" role="button">Ingresa aqui</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/Carrusel/atardecer.jpg" alt="Third slide">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1><strong>GALERIA</strong></h1>
+                                <p><strong>Visita Nuestra Galeria de Imagenes</strong></p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Galeria</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div><!-- /.carousel -->
+
+            <hr class="featurette-divider">
+
+            <!-- Marketing messaging and featurettes
+            ================================================== -->
+            <!-- Wrap the rest of the page in another container to center all the content. -->
+            <div class="container marketing">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <h1 class="no-margin"><i class="fa fa-user fa-3x"></i></h1>
+                            </div>
+                            <div class="col-sm-10">
+                                <h1>Contacto</h1>
+                                <div class="text-left">
+                                    Contactanos a través de nuestro formulario, en este podras hacernos llegar tus inquetudes y sugerencias.
+                                </div>
+                                <br>
+                                <div class="tex-left" id="contacto">
+                                    <h2>Ingrese sus datos</h2>
+                                    <br>   
+                                    <p class="lead"><label>Nombre <input name="nombre" class="form-input" type="text" id="nombre" size="20" onblur="revisar(this)"/></label></p>
+                                    <p class="lead"><label>Apellido <input name="apellido" class="form-input" type="text" id="apellido" size="20" onblur="revisar(this)"/></label></p>
+                                    <p class="lead"><label>E-mail <input name="email" class="form-input" type="email" id="mail" size="20" onblur="revisar(this);
+                                            revisaremail(this)"/></label></p>
+                                    <p class="lead"><label>Detalle</label><textarea name="comments" id="mensaje" cols="90" rows="8"></textarea></p>
+                                    <p class="lead" id="textoFormulario"><label>Envie su formulario</label>
+                                    <input class="btn btn-primary btn-lg" type="submit" id="enviar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <h1 class="no-margin"><i class="fa fa-map-marker fa-3x"></i></h1>
+                            </div>
+                            <div class="col-sm-10">
+                                <h1>Nuestra ubicación</h1>
+                                <div class="text-left">
+                                    Direccion: Etchevers N°268 oficina N°71. Edificio Brasilia, Viña del mar
+                                </div>
+                                <br>
+                                <div class="tex-left">
+                                    <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1672.5844271522815!2d-71.55639063994846!3d-33.025681626159624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de09e3e23e4d%3A0xf3064c1273b22a85!2sEchevers+268%2C+Vi%C3%B1a+del+Mar%2C+Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1412627077202"></iframe>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <hr class="featurette-divider">
+                <!-- FOOTER -->
+                <div class="footer">
+                    <footer>
+                        <p class="pull-right"><a href="#">Back to top</a></p>
+                        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                    </footer>
+                </div>  
+            </div><!-- /.container -->
+
+            <!-- Bootstrap core JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+            <script src="../../assets/js/docs.min.js"></script>
+            <script type="text/javascript">
+                                        function getUrlVars() {
+                                            var vars = [], hash;
+                                            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                                            for (var i = 0; i < hashes.length; i++) {
+                                                hash = hashes[i].split('=');
+                                                vars.push(hash[0]);
+                                                vars[hash[0]] = hash[1];
+                                            }
+                                            return vars;
+                                        }
+
+                                        $(document).ready(function() {
+                                            switch (getUrlVars()['l']) {
+                                                case 'ok':
+                                                    window.location.href = "#contacto";
+                                                    $('#textoFormulario').val('Formulario enviado correctamente');
+                                                    break;
+                                            }
+                                        });
+            </script>
+        </form>
+    </body>
+</html>
