@@ -6,9 +6,12 @@
 
 .iframe{
     height: 400px;
-    width: 75%;
-    border-color: gainsboro;
+    width: 100%;
+
+    border-color: currentcolor;
     border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
 }
 
 .panel-default {

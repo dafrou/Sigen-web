@@ -33,26 +33,26 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand sigen" href="/">
+                                <a class="navbar-brand sigen" href="index.html">
                                     <img src="images/Logos/logo-menu.png">
                                 </a>
                             </div>
                             <div class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav">
                                     <li><a href="index.html">Inicio</a></li>
-                                    <li><a href="quienes.html">Quienes Somos</a></li>
-                                    <li><a href="contacto.html">Contacto</a></li>
+                                    <li><a href="quienes.html#quienes">Quienes Somos</a></li>
+                                    <li><a href="contacto.html#contacto">Contacto</a></li>
                                     <li><a href="index.html">Galeria</a></li>   
-                                    <li><a href="http://www.sigen.cl:2095/webmaillogout.cgi">Correo corporativo</a></li>   
+                                    <li><a href="http://www.sigen.cl:2095/webmaillogout.cgi" target="_blank">Correo corporativo</a></li>   
                                     <li class="dropdown">
-                                        <a href="servicios" class="dropdown-toggle" data-toggle="dropdown">Servicios<span class="caret"></span></a>
+                                        <a href="servicio.html" class="dropdown-toggle" data-toggle="dropdown">Servicios<span class="caret"></span></a>
                                         <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Ingeniería Eléctrica</a></li>
-                                            <li><a href="#">Ingeniería y Gestión Técnica de los Combustibles</a></li>
-                                            <li><a href="#">Gestión Técnica de Instalaciones Industriales y Comerciales</a></li>
+                                            <li><a href="servicio.html#1">Ingeniería Eléctrica</a></li>
+                                            <li><a href="servicio.html#2">Ingeniería y Gestión Técnica de los Combustibles</a></li>
+                                            <li><a href="servicio.html#3">Gestión Técnica de Instalaciones Industriales y Comerciales</a></li>
                                             <li class="divider"></li>
                                             <li class="dropdown-header">Servicios en terreno</li>
-                                            <li><a href="#">Inspección Técnica de Obras</a></li>                                        
+                                            <li><a href="servicio.html">Inspección Técnica de Obras</a></li>                                        
                                         </ul>
                                     </li>
                                 </ul>
@@ -109,22 +109,23 @@
                 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
             </div><!-- /.carousel -->
 
-            <hr class="featurette-divider">
+            <hr class="featurette-divider"/>
 
             <!-- Marketing messaging and featurettes
             ================================================== -->
-            <!-- Wrap the rest of the page in another container to center all the content. -->
-            <div class="container marketing">
+            <!-- Wrap the rest of the page in another container to center all the content. -->  
+            <a id="contacto"></a>
+            <div class="container marketing">              
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-2">
                                 <h1 class="no-margin"><i class="fa fa-user fa-3x"></i></h1>
                             </div>
-                            <div class="col-sm-10">
+                            <div class="col-sm-9">
                                 <h1>Contacto</h1>
                                 <div class="text-left">
-                                    Contactanos a través de nuestro formulario, en este podras hacernos llegar tus inquetudes y sugerencias.
+                                    Para contactarnos, utilice nuestro formulario, en este podrá hacernos llegar sus consultas y sugerencias.
                                 </div>
                                 <br>
                                 <div class="tex-left" id="contacto">
@@ -136,7 +137,7 @@
                                             revisaremail(this)"/></label></p>
                                     <p class="lead"><label>Detalle</label><textarea name="comments" id="mensaje" cols="90" rows="8"></textarea></p>
                                     <p class="lead" id="textoFormulario"><label>Envie su formulario</label>
-                                    <input class="btn btn-primary btn-lg" type="submit" id="enviar">
+                                        <input class="btn btn-primary btn-lg" type="submit" id="enviar">
                                 </div>
                             </div>
                         </div>
@@ -148,10 +149,10 @@
                             <div class="col-sm-2">
                                 <h1 class="no-margin"><i class="fa fa-map-marker fa-3x"></i></h1>
                             </div>
-                            <div class="col-sm-10">
+                            <div class="col-sm-9">
                                 <h1>Nuestra ubicación</h1>
-                                <div class="text-left">
-                                    Direccion: Etchevers N°268 oficina N°71. Edificio Brasilia, Viña del mar
+                                <div class="text-left">                                 
+                                    Dirección: Etchevers N°268 oficina N°71-B. Edificio Brasilia, Viña del mar. Fono: 56-32-2544304.
                                 </div>
                                 <br>
                                 <div class="tex-left">
@@ -168,9 +169,9 @@
                 <div class="footer">
                     <footer>
                         <p class="pull-right"><a href="#">Back to top</a></p>
-                        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                        <p>&copy; 2014 SIGEN. &middot; <a href="quienes.html#quienes">Quienes Somos</a> &middot; <a href="contacto.html#contacto">Contacto</a> &middot; <a href="galeria.html">Galeria</a> &middot; <a href="servicio.html">Servicios</a></p>
                     </footer>
-                </div>  
+                </div>
             </div><!-- /.container -->
 
             <!-- Bootstrap core JavaScript
@@ -191,7 +192,7 @@
                                             return vars;
                                         }
 
-                                        $(document).ready(function() {
+                                        $(document).ready(function () {
                                             switch (getUrlVars()['l']) {
                                                 case 'ok':
                                                     window.location.href = "#contacto";

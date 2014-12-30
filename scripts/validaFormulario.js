@@ -36,6 +36,11 @@ function validar(form) {
         alert('No has escrito tu e-Mail'); // Mensaje a mostrar
         return false; //devolvemos un valor negativo
     }
+    
+    else 
+    {
+        alert('Formulario enviado correctamente'); // Mensaje a mostrar
+        return true; // Si esta todo bien, devolvemos Ok, positivo
+    }
 
-    return true; // Si esta todo bien, devolvemos Ok, positivo
 }
